@@ -1,4 +1,4 @@
-package com.example.myhealth;
+package com.example.myhealth.activities;
 
 import android.content.Intent;
 import android.os.Bundle;

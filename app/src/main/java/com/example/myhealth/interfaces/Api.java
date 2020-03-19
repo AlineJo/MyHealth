@@ -1,4 +1,9 @@
-package com.example.myhealth;
+package com.example.myhealth.interfaces;
+
+import com.example.myhealth.model.DefaultResponse;
+import com.example.myhealth.model.EmailResponse;
+import com.example.myhealth.model.LoginResponse;
+import com.example.myhealth.model.UsersResponse;
 
 import retrofit2.Call;
 import retrofit2.http.DELETE;

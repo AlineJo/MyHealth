@@ -1,4 +1,4 @@
-package com.example.myhealth;
+package com.example.myhealth.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,10 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
+import com.example.myhealth.model.LoginResponse;
+import com.example.myhealth.R;
+import com.example.myhealth.model.RetrofitClient;
+import com.example.myhealth.model.SharedPrefManager;
 
 import retrofit2.Call;
 import retrofit2.Callback;

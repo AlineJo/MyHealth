@@ -1,8 +1,7 @@
-package com.example.myhealth;
+package com.example.myhealth.activities;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
-import android.graphics.YuvImage;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -18,6 +17,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.RadioGroup;
+
+import com.example.myhealth.R;
+import com.example.myhealth.model.RetrofitClient;
+import com.example.myhealth.model.DefaultResponse;
 
 import org.json.JSONException;
 import org.json.JSONObject;

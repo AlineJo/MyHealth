@@ -1,4 +1,4 @@
-package com.example.myhealth;
+package com.example.myhealth.fragments;
 
 
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+
+import com.example.myhealth.R;
 
 
 /**

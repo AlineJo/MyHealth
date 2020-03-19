@@ -1,4 +1,4 @@
-package com.example.myhealth;
+package com.example.myhealth.model;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+
+import com.example.myhealth.R;
+import com.example.myhealth.activities.login;
+import com.example.myhealth.activities.regestration;
 
 
 public class MainActivity extends AppCompatActivity {

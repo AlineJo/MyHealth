@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".model.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,17 +19,17 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".regestration"></activity>
-        <activity android:name=".login"></activity>
-        <activity android:name=".SecurityOfPasswordActivity">
+        <activity android:name=".activities.regestration"></activity>
+        <activity android:name=".activities.login"></activity>
+        <activity android:name=".activities.SecurityOfPasswordActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Resetpassword"></activity>
-        <activity android:name=".LifestyleActivity">
+        <activity android:name=".activities.Resetpassword"></activity>
+        <activity android:name=".activities.LifestyleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

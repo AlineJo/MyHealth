@@ -1,7 +1,6 @@
-package com.example.myhealth;
+package com.example.myhealth.model;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.example.myhealth.interfaces.Api;
 
 import java.util.concurrent.TimeUnit;
 

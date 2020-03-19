@@ -1,4 +1,6 @@
-package com.example.myhealth;
+package com.example.myhealth.model;
+
+import com.example.myhealth.model.User;
 
 import java.util.List;
 

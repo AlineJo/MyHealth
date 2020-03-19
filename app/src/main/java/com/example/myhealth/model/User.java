@@ -1,4 +1,4 @@
-package com.example.myhealth;
+package com.example.myhealth.model;
 
 import android.content.Context;
 import android.content.SharedPreferences;
