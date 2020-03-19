@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profile"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/lifestyle"
+        android:title="قيم صحتك" />
+    <item
+        android:id="@+id/activity"
+        android:title="الأنشطه البدنية" />
+    <item
+        android:id="@+id/food"
+        android:title="الوجبات" />
+
+    <item
+        android:id="@+id/goal"
+        android:title="لأهداف" />
+    <item
+        android:id="@+id/challenge"
+        android:title="التحدي" />
+    <item
+        android:id="@+id/logout"
+        android:title="الخروج" />
+
+</menu>

@@ -21,6 +21,8 @@
         <item>In what town was your first job?</item>
         <item>What was the name of the company where you had your first job?</item>
     </string-array>
+    <string name="drawerOpen">drawerOpen</string>
+    <string name="drawerClose">drawerClose</string>
 
 
     </resources>
