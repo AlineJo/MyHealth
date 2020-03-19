@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MyHealth</string>
+
+
+        <string name="title_lifestyle">قيم صحتك</string>
+        <string name="title_PA">الأنشطة الرياضية</string>
+        <string name="title_Meal">الوجبات</string>
+        <string name="title_Goal">الاهداف</string>
+        <string name="title_Challenge">التحدي</string>
+
+    <string-array name="questions_list">
+
+        <item>What was your childhood nickname?</item>
+        <item>What is the name of your favorite childhood friend?</item>
+        <item>In what city or town did your mother and father meet?</item>
+        <item>What is your favorite team?","What is your favorite movie?</item>
+        <item>What was your favorite sport in high school?</item>
+        <item>What was your favorite food as a child?</item>
+        <item>What was the make and model of your first car?</item>
+        <item>What was the last name of your third grade teacher?</item>
+        <item>In what town was your first job?</item>
+        <item>What was the name of the company where you had your first job?</item>
+    </string-array>
+
+
+    </resources>
+

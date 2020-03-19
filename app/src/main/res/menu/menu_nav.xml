@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/life"
+        android:icon="@drawable/ic_assignment_black_24dp"
+        android:title="قيم صحتك" />
+
+    <item
+        android:id="@+id/physical_activity"
+        android:icon="@drawable/ic_fitness_center_black_24dp"
+        android:title="الأنشطة الرياضية" />
+
+    <item
+        android:id="@+id/meals"
+        android:icon="@drawable/ic_restaurant_black_24dp"
+        android:title="الوجبات" />
+
+    <item
+        android:id="@+id/goal"
+        android:icon="@drawable/ic_trending_up_black_24dp"
+        android:title="الهدف" />
+    <item
+        android:id="@+id/challenge"
+        android:icon="@drawable/ic_terrain_black_24dp"
+        android:title="التحدي" />
+</menu>

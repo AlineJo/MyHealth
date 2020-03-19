@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="200dp">
+
+
+
+
+    <EditText
+        android:id="@+id/uuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHighlight="#BE2E2E"
+        android:textColorHint="#BE2E2E"
+        android:inputType="textPersonName"
+        android:hint="الاسم المستخدم"
+        android:textAlignment="center"
+        android:textSize="24dp"
+/>
+
+    <TextView
+        android:id="@+id/qqq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="السؤال:"
+        android:textColor="#BE2E2E"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:paddingLeft="150dp"
+        android:paddingTop="20dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/answerr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="الاجابة"
+        android:inputType="textEmailAddress"
+        android:paddingTop="20dp"
+        android:textAlignment="center"
+        android:textColorHighlight="#BE2E2E"
+        android:textColorHint="#BE2E2E"
+        android:textSize="24dp" />
+
+
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/next"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:text="التالي"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+
+
+</LinearLayout>

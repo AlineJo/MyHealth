@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="200dp">
+
+
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHighlight="#BE2E2E"
+        android:textColorHint="#BE2E2E"
+        android:hint="الاسم المستخدم"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="الرقم السري"
+        android:inputType="textPassword"
+        android:paddingLeft="260dp"
+        android:textColorHighlight="#BE2E2E"
+        android:textColorHint="#BE2E2E"
+        android:textSize="20sp" />
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnl"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:text="تسجيل دخول"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+    <TextView
+        android:id="@+id/viewRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/colorPrimaryDark"
+        android:text="حساب جديد؟!"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/viewReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/colorPrimaryDark"
+        android:text="هل نسيت الرقم السري ؟!"
+        android:textAlignment="center"
+        />
+
+</LinearLayout>
+
+

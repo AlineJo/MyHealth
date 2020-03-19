@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="150dp"
+    android:paddingRight="50dp">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="مرحبا بكم في صفحة الوجبات"
+        android:textColor="#BE2E2E"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</LinearLayout>
