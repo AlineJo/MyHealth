@@ -37,7 +37,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.SideMenuActivity">
+        <activity
+            android:name=".activities.SideMenuActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
