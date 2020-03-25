@@ -2,11 +2,11 @@
     <string name="app_name">MyHealth</string>
 
 
-        <string name="title_lifestyle">قيم صحتك</string>
-        <string name="title_PA">الأنشطة الرياضية</string>
-        <string name="title_Meal">الوجبات</string>
-        <string name="title_Goal">الاهداف</string>
-        <string name="title_Challenge">التحدي</string>
+    <string name="title_lifestyle">قيم صحتك</string>
+    <string name="title_PA">الأنشطة الرياضية</string>
+    <string name="title_Meal">الوجبات</string>
+    <string name="title_Goal">الاهداف</string>
+    <string name="title_Challenge">التحدي</string>
 
     <string-array name="questions_list">
 
@@ -24,6 +24,9 @@
     <string name="drawerOpen">drawerOpen</string>
     <string name="drawerClose">drawerClose</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    </resources>
+
+</resources>
 
