@@ -25,4 +25,17 @@
         android:id="@+id/challenge"
         android:icon="@drawable/ic_terrain_black_24dp"
         android:title="التحدي" />
+
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/ic_help_black_24dp"
+        android:title="دليل Healthy Lifestyle" />
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="معلومات عن Healthy Lifestyle" />
+    <item
+        android:id="@+id/resetpass"
+        android:icon="@drawable/ic_update_black_24dp"
+        android:title="اعادة ضبط الرقم السري" />
 </menu>

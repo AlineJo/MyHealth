@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:text="السعرات الحراريه الخاصه بك:"
         android:textSize="24dp"
-       android:paddingLeft="95dp"
+        android:paddingLeft="95dp"
         android:paddingTop="20dp"/>
 
     <TextView

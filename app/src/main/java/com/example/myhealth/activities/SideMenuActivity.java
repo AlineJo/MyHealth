@@ -52,7 +52,7 @@ public class SideMenuActivity extends AppCompatActivity implements NavigationVie
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
             case R.id.profile:
-                Toast.makeText(SideMenuActivity.this, "Profile Selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SideMenuActivity.this, "الملف الشخصي", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 PActivityFragment fragment = new PActivityFragment();
                 fragment.setMsg("Hello!!!!");
@@ -60,29 +60,29 @@ public class SideMenuActivity extends AppCompatActivity implements NavigationVie
 
                 break;
             case R.id.lifestyle:
-                Toast.makeText(SideMenuActivity.this, "Contact us Selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SideMenuActivity.this, "قيم صحتك", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.activity:
-                Toast.makeText(SideMenuActivity.this, "الانشطة البدنية", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SideMenuActivity.this, "الانشطة الرياضية", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 changeFragmentTo(new SportActivitiesFragment(), SportActivitiesFragment.class.getSimpleName());
 
                 break;
             case R.id.food:
-                Toast.makeText(SideMenuActivity.this, "About us Selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SideMenuActivity.this, "الوجبات", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 break;
             case R.id.goal:
-                Toast.makeText(SideMenuActivity.this, "Goals", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SideMenuActivity.this, "الاهداف", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 break;
             case R.id.challenge:
-                Toast.makeText(SideMenuActivity.this, "Challenge", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SideMenuActivity.this, "التحدي", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 changeFragmentTo(new ChallengeFragment(), ChallengeFragment.class.getSimpleName());
                 break;
             case R.id.logout:
-                Toast.makeText(SideMenuActivity.this, "Logout Selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SideMenuActivity.this, "الخروج", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 break;
             default:
