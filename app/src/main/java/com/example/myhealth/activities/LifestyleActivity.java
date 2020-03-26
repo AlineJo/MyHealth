@@ -17,7 +17,7 @@ import com.example.myhealth.R;
  */
 public class LifestyleActivity extends AppCompatActivity {
 
-
+//lifestyle
     public LifestyleActivity() {
         // Required empty public constructor
     }
