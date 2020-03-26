@@ -33,12 +33,14 @@
         android:id="@+id/v_goals"
         android:layout_width="224dp"
         android:layout_height="256dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v_background" />
 
     <ImageButton
         android:id="@+id/ib_goals"

@@ -14,6 +14,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.myhealth.R;
+import com.example.myhealth.fragments.AdminHomeFragment;
+import com.example.myhealth.fragments.AdminSearchFragment;
 import com.example.myhealth.fragments.ChallengeFragment;
 import com.example.myhealth.fragments.LifeStyleFragment;
 import com.example.myhealth.fragments.PActivityFragment;
@@ -71,10 +73,13 @@ public class SideMenuActivity extends AppCompatActivity implements NavigationVie
             case R.id.food:
                 Toast.makeText(SideMenuActivity.this, "الوجبات", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
+                changeFragmentTo(new AdminHomeFragment(), AdminHomeFragment.class.getSimpleName());
                 break;
             case R.id.goal:
                 Toast.makeText(SideMenuActivity.this, "الاهداف", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
+                changeFragmentTo(new AdminSearchFragment(), AdminSearchFragment.class.getSimpleName());
+
                 break;
             case R.id.challenge:
                 Toast.makeText(SideMenuActivity.this, "التحدي", Toast.LENGTH_SHORT).show();

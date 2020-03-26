@@ -22,6 +22,18 @@ public class User {
         this.answer = answer;
     }
 
+    public User(int id, String name) {
+        this.id = id;
+        this.name = name;
+        this.age = "20";
+        this.gender = "notProvided";
+        this.email = "notProvided";
+        this.username = "notProvided";
+        this.password = "notProvided";
+        this.sq = "notProvided";
+        this.answer = "notProvided";
+    }
+
     public int getId() {
         return id;
     }
