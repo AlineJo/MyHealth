@@ -17,6 +17,9 @@ import com.example.myhealth.R;
 import com.example.myhealth.fragments.AdminHomeFragment;
 import com.example.myhealth.fragments.AdminSearchFragment;
 import com.example.myhealth.fragments.ChallengeFragment;
+import com.example.myhealth.fragments.Goals;
+import com.example.myhealth.fragments.GoalsControlFragment;
+import com.example.myhealth.fragments.GoalsFragment;
 import com.example.myhealth.fragments.LifeStyleFragment;
 import com.example.myhealth.fragments.PActivityFragment;
 import com.example.myhealth.fragments.SportActivitiesFragment;
@@ -73,12 +76,12 @@ public class SideMenuActivity extends AppCompatActivity implements NavigationVie
             case R.id.food:
                 Toast.makeText(SideMenuActivity.this, "الوجبات", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
-                changeFragmentTo(new AdminHomeFragment(), AdminHomeFragment.class.getSimpleName());
+                changeFragmentTo(new GoalsControlFragment(), GoalsControlFragment.class.getSimpleName());
                 break;
             case R.id.goal:
                 Toast.makeText(SideMenuActivity.this, "الاهداف", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
-                changeFragmentTo(new AdminSearchFragment(), AdminSearchFragment.class.getSimpleName());
+                changeFragmentTo(new GoalsFragment(), GoalsFragment.class.getSimpleName());
 
                 break;
             case R.id.challenge:
