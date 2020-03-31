@@ -92,7 +92,7 @@ public class ChatRecyclerViewAdapter extends RecyclerView.Adapter<ChatRecyclerVi
 
             tvMyMyMessageBody = itemView.findViewById(R.id.message_body);
             tvTheirMyMessageBody = itemView.findViewById(R.id.their_message_body);
-            name = itemView.findViewById(R.id.name);
+            name = itemView.findViewById(R.id.tv_username);
         }
     }
 

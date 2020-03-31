@@ -27,6 +27,15 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="profile_name"><u>الإسم : </u></string>
+    <string name="profile_age"><u>العمر : </u></string>
+    <string name="profile_gender"><u>الجنس : </u></string>
+    <string name="profile_weight"><u>الوزن : </u></string>
+    <string name="profile_tall"><u>الطول : </u></string>
+    <string name="profile_hip_width"><u>محيط الخصر : </u></string>
+    <string name="profile_heath_center"><u>المركز الصحي : </u></string>
+    <string name="profile_check_health"><u>قيم صحتك : </u></string>
+    <string name="profile_goals"><u>الآهداف : </u></string>
 
 </resources>
 

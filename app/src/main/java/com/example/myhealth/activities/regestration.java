@@ -42,7 +42,7 @@ public class regestration extends AppCompatActivity {
         setContentView(R.layout.activity_regestration);
 
         btndob =(Button)findViewById(R.id.button3);
-        editTextName = (EditText) findViewById(R.id.name);
+        editTextName = (EditText) findViewById(R.id.tv_username);
 
         editTextEmail = (EditText) findViewById(R.id.email);
         editTextPassword = (EditText) findViewById(R.id.password);

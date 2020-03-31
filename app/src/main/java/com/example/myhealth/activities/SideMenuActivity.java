@@ -22,6 +22,7 @@ import com.example.myhealth.fragments.GoalsControlFragment;
 import com.example.myhealth.fragments.GoalsFragment;
 import com.example.myhealth.fragments.LifeStyleFragment;
 import com.example.myhealth.fragments.PActivityFragment;
+import com.example.myhealth.fragments.ProfileFragment;
 import com.example.myhealth.fragments.SportActivitiesFragment;
 import com.google.android.material.navigation.NavigationView;
 
@@ -59,13 +60,11 @@ public class SideMenuActivity extends AppCompatActivity implements NavigationVie
             case R.id.profile:
                 Toast.makeText(SideMenuActivity.this, "الملف الشخصي", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
-                PActivityFragment fragment = new PActivityFragment();
-                fragment.setMsg("Hello!!!!");
-                changeFragmentTo(fragment, PActivityFragment.class.getSimpleName());
-
+                changeFragmentTo(new ProfileFragment(), ProfileFragment.class.getSimpleName());
                 break;
             case R.id.lifestyle:
                 Toast.makeText(SideMenuActivity.this, "قيم صحتك", Toast.LENGTH_SHORT).show();
+                drawerLayout.closeDrawer(GravityCompat.START);
                 break;
             case R.id.activity:
                 Toast.makeText(SideMenuActivity.this, "الانشطة الرياضية", Toast.LENGTH_SHORT).show();
