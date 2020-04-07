@@ -14,16 +14,14 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.myhealth.R;
-import com.example.myhealth.fragments.AdminHomeFragment;
-import com.example.myhealth.fragments.AdminSearchFragment;
+import com.example.myhealth.fragments.AppInfoFragment;
 import com.example.myhealth.fragments.ChallengeFragment;
-import com.example.myhealth.fragments.Goals;
 import com.example.myhealth.fragments.GoalsControlFragment;
 import com.example.myhealth.fragments.GoalsFragment;
 import com.example.myhealth.fragments.LifeStyleFragment;
-import com.example.myhealth.fragments.PActivityFragment;
 import com.example.myhealth.fragments.ProfileFragment;
 import com.example.myhealth.fragments.SportActivitiesFragment;
+import com.example.myhealth.fragments.UserGuidFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class SideMenuActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -91,6 +89,15 @@ public class SideMenuActivity extends AppCompatActivity implements NavigationVie
             case R.id.logout:
                 Toast.makeText(SideMenuActivity.this, "الخروج", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
+                break;
+
+            case R.id.help:
+                drawerLayout.closeDrawer(GravityCompat.START);
+                changeFragmentTo(new UserGuidFragment(), UserGuidFragment.class.getSimpleName());
+                break;
+            case R.id.info:
+                drawerLayout.closeDrawer(GravityCompat.START);
+                changeFragmentTo(new AppInfoFragment(), AppInfoFragment.class.getSimpleName());
                 break;
             default:
                 break;
