@@ -8,6 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.core.content.ContextCompat;
+
 import com.example.myhealth.R;
 import com.example.myhealth.model.UserGuid;
 
@@ -53,7 +55,7 @@ public class UserGuidAdapter extends BaseAdapter {
 
         tvTitle = view.findViewById(R.id.tv_title);
         tvTitle.setText(userGuid.getTitle());
-        tvTitle.setTextColor(userGuid.getTextColor());
+        tvTitle.setTextColor(ContextCompat.getColor(mContext, userGuid.getTextColor()));
 
         return view;
     }
