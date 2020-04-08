@@ -1,24 +1,37 @@
 package com.example.myhealth.fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.ListView;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.example.myhealth.R;
+import com.example.myhealth.adapters.UserGuidAdapter;
+import com.example.myhealth.model.UserGuid;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class UserGuidFragment extends Fragment {
 
+    private Context mContext;
+
     public UserGuidFragment() {
         // Required empty public constructor
     }
 
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        mContext = context;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -26,28 +39,90 @@ public class UserGuidFragment extends Fragment {
         // Inflate the layout for this fragment
         View parentView = inflater.inflate(R.layout.fragment_user_guid, container, false);
 
-        TextView tv1 = parentView.findViewById(R.id.tv_1);
-        TextView tv2 = parentView.findViewById(R.id.tv_2);
-        TextView tv3 = parentView.findViewById(R.id.tv_3);
-        TextView tv4 = parentView.findViewById(R.id.tv_4);
-        TextView tv5 = parentView.findViewById(R.id.tv_5);
-        TextView tv6 = parentView.findViewById(R.id.tv_6);
-        TextView tv7 = parentView.findViewById(R.id.tv_7);
-        TextView tv8 = parentView.findViewById(R.id.tv_8);
-        TextView tv9 = parentView.findViewById(R.id.tv_9);
-        TextView tv10 = parentView.findViewById(R.id.tv_10);
+        ListView listView = parentView.findViewById(R.id.list_view);
+        ArrayList<UserGuid> userGuidArrayList = new ArrayList<>();
+        createDemoSteps(userGuidArrayList);
 
-        tv1.setText("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
-        tv2.setText("");
-        tv3.setText("");
-        tv4.setText("");
-        tv5.setText("");
-        tv6.setText("");
-        tv7.setText("");
-        tv8.setText("");
-        tv9.setText("");
-        tv10.setText("");
+        UserGuidAdapter adapter = new UserGuidAdapter(mContext, userGuidArrayList);
+
+        listView.setAdapter(adapter);
+
 
         return parentView;
+    }
+
+    private void createDemoSteps(ArrayList<UserGuid> userGuidArrayList) {
+
+        UserGuid userGuid;
+
+        //step 1
+        userGuid = new UserGuid();
+        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
+        userGuid.setTextColor(R.color.colorBlack);
+        userGuid.setCloudShape(R.drawable.ic_cloud_1);
+        userGuidArrayList.add(userGuid);
+
+        //step 2
+        userGuid = new UserGuid();
+        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
+        userGuid.setTextColor(R.color.colorBlack);
+        userGuid.setCloudShape(R.drawable.ic_cloud_2);
+        userGuidArrayList.add(userGuid);
+
+        //step 3
+        userGuid = new UserGuid();
+        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
+        userGuid.setTextColor(R.color.colorBlack);
+        userGuid.setCloudShape(R.drawable.ic_cloud_3);
+
+        userGuidArrayList.add(userGuid); //step 4
+        userGuid = new UserGuid();
+        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
+        userGuid.setTextColor(R.color.colorBlack);
+        userGuid.setCloudShape(R.drawable.ic_cloud_3);
+        userGuidArrayList.add(userGuid);
+
+        //step 5
+        userGuid = new UserGuid();
+        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
+        userGuid.setTextColor(R.color.colorGreen);
+        userGuid.setCloudShape(R.drawable.ic_cloud_4);
+        userGuidArrayList.add(userGuid);
+
+        //step 6
+        userGuid = new UserGuid();
+        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
+        userGuid.setTextColor(R.color.colorGreen);
+        userGuid.setCloudShape(R.drawable.ic_cloud_4);
+        userGuidArrayList.add(userGuid);
+
+        //step 7
+        userGuid = new UserGuid();
+        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
+        userGuid.setTextColor(R.color.colorGreen);
+        userGuid.setCloudShape(R.drawable.ic_cloud_4);
+        userGuidArrayList.add(userGuid);
+
+        //step 8
+        userGuid = new UserGuid();
+        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
+        userGuid.setTextColor(R.color.colorGreen);
+        userGuid.setCloudShape(R.drawable.ic_cloud_4);
+        userGuidArrayList.add(userGuid);
+
+        //step 9
+        userGuid = new UserGuid();
+        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
+        userGuid.setTextColor(R.color.colorGreen);
+        userGuid.setCloudShape(R.drawable.ic_cloud_4);
+        userGuidArrayList.add(userGuid);
+
+        //step 10
+        userGuid = new UserGuid();
+        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
+        userGuid.setTextColor(R.color.colorGreen);
+        userGuid.setCloudShape(R.drawable.ic_cloud_4);
+        userGuidArrayList.add(userGuid);
+
     }
 }
