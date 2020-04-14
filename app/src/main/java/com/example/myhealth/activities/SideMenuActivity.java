@@ -1,5 +1,6 @@
 package com.example.myhealth.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -52,6 +53,8 @@ public class SideMenuActivity extends AppCompatActivity implements NavigationVie
 
     }
 
+
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
@@ -64,45 +67,67 @@ public class SideMenuActivity extends AppCompatActivity implements NavigationVie
                 Toast.makeText(SideMenuActivity.this, "قيم صحتك", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 break;
+
             case R.id.activity:
                 Toast.makeText(SideMenuActivity.this, "الانشطة الرياضية", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 changeFragmentTo(new SportActivitiesFragment(), SportActivitiesFragment.class.getSimpleName());
+                 break;
 
-                break;
             case R.id.food:
                 Toast.makeText(SideMenuActivity.this, "الوجبات", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 changeFragmentTo(new GoalsControlFragment(), GoalsControlFragment.class.getSimpleName());
                 break;
+
             case R.id.goal:
                 Toast.makeText(SideMenuActivity.this, "الاهداف", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 changeFragmentTo(new GoalsFragment(), GoalsFragment.class.getSimpleName());
-
                 break;
+
             case R.id.challenge:
                 Toast.makeText(SideMenuActivity.this, "التحدي", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 changeFragmentTo(new ChallengeFragment(), ChallengeFragment.class.getSimpleName());
                 break;
+
+
+
+            case R.id.resetpass:
+                Toast.makeText(SideMenuActivity.this, "اعادة ضبط الرقم السري", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SideMenuActivity.this, Resetpassword.class);
+                startActivity(intent);
+                break;
+
             case R.id.logout:
                 Toast.makeText(SideMenuActivity.this, "الخروج", Toast.LENGTH_SHORT).show();
-                drawerLayout.closeDrawer(GravityCompat.START);
+                logout();
+
                 break;
 
             case R.id.help:
+                Toast.makeText(SideMenuActivity.this, "دليل Healthy Lifestyle", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 changeFragmentTo(new UserGuidFragment(), UserGuidFragment.class.getSimpleName());
                 break;
+
             case R.id.info:
+                Toast.makeText(SideMenuActivity.this, "معلومات عن Healthy Lifestyle", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 changeFragmentTo(new AppInfoFragment(), AppInfoFragment.class.getSimpleName());
                 break;
+
             default:
                 break;
         }
         return false;
+    }
+
+    private void logout() {
+        Intent intent = new Intent(this,login.class);
+        finish();
+        startActivity(intent);
     }
 
 
