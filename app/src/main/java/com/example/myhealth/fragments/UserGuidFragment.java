@@ -64,63 +64,71 @@ public class UserGuidFragment extends Fragment {
 
         //step 2
         userGuid = new UserGuid();
-        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
+        userGuid.setTitle("إنضم معنا، بالضغط على أيقونة المستخدم الجديد،" +
+                "و قم بتعبئة اليانات من فضلك");
         userGuid.setTextColor(R.color.colorBlack);
-        userGuid.setCloudShape(R.drawable.ic_cloud_2);
+        userGuid.setCloudShape(R.drawable.ic_cloud_1);
         userGuidArrayList.add(userGuid);
 
         //step 3
         userGuid = new UserGuid();
-        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
+        userGuid.setTitle("ثم اضغط على تسجيل الدخول");
         userGuid.setTextColor(R.color.colorBlack);
         userGuid.setCloudShape(R.drawable.ic_cloud_3);
 
         userGuidArrayList.add(userGuid); //step 4
         userGuid = new UserGuid();
-        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
+        userGuid.setTitle("شكراً على بياناتك التي وافيتنا بها!");
         userGuid.setTextColor(R.color.colorBlack);
         userGuid.setCloudShape(R.drawable.ic_cloud_3);
         userGuidArrayList.add(userGuid);
 
         //step 5
         userGuid = new UserGuid();
-        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
-        userGuid.setTextColor(R.color.colorGreen);
+        userGuid.setTitle("قم الآن بتقييم صصحتك من فضلك!");
+        userGuid.setTextColor(R.color.colorBlack);
         userGuid.setCloudShape(R.drawable.ic_cloud_4);
         userGuidArrayList.add(userGuid);
 
         //step 6
         userGuid = new UserGuid();
-        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
-        userGuid.setTextColor(R.color.colorGreen);
+        userGuid.setTitle("ستظهر لك نافذة لنتائج تقييمنا لصحتك،" +
+                "تشمل عدد سعراتك الحرارية،مؤشر كتلة الجسم و النتيجة(منخفضة، متوسطة، عالية)");
+        userGuid.setTextColor(R.color.colorBlack);
         userGuid.setCloudShape(R.drawable.ic_cloud_4);
         userGuidArrayList.add(userGuid);
 
         //step 7
         userGuid = new UserGuid();
-        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
-        userGuid.setTextColor(R.color.colorGreen);
-        userGuid.setCloudShape(R.drawable.ic_cloud_4);
+        userGuid.setTitle("بعد ذلك،" +
+                "قم بمشاركتنا بنشاطك الرياضي!" +
+                "سواءً في المنزل ،العمل ، النادي الرياضي");
+        userGuid.setTextColor(R.color.colorBlack);
+        userGuid.setCloudShape(R.drawable.ic_cloud_3);
         userGuidArrayList.add(userGuid);
 
         //step 8
         userGuid = new UserGuid();
-        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
-        userGuid.setTextColor(R.color.colorGreen);
-        userGuid.setCloudShape(R.drawable.ic_cloud_4);
+        userGuid.setTitle("ثم،" +
+                "اخبرنا بماذا تلذذت اليوم!");
+        userGuid.setTextColor(R.color.colorBlack);
+        userGuid.setCloudShape(R.drawable.ic_cloud_3);
         userGuidArrayList.add(userGuid);
 
         //step 9
         userGuid = new UserGuid();
-        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
-        userGuid.setTextColor(R.color.colorGreen);
+        userGuid.setTitle("والآن،" +
+                "أفدنا بماذا تخطط إليه اتجاه صحتك!" +
+                "وحقق اهدافك");
+        userGuid.setTextColor(R.color.colorBlack);
         userGuid.setCloudShape(R.drawable.ic_cloud_4);
         userGuidArrayList.add(userGuid);
 
         //step 10
         userGuid = new UserGuid();
-        userGuid.setTitle("ممتنين لك ، لانضمامك معنا من اجل صحة مثالية!");
-        userGuid.setTextColor(R.color.colorGreen);
+        userGuid.setTitle("وأخيراً،" +
+                "اسعى للتغير، و تحدى الآخرين واستمتع بمحادثتهم");
+        userGuid.setTextColor(R.color.colorBlack);
         userGuid.setCloudShape(R.drawable.ic_cloud_4);
         userGuidArrayList.add(userGuid);
 

@@ -12,6 +12,8 @@
         android:layout_height="match_parent"
         android:padding="16dp"
         android:scrollbars="vertical"
-        android:text="@string/profile_app_info" />
+        android:text="@string/profile_app_info"
+
+        android:textSize="20dp" />
 
 </FrameLayout>
