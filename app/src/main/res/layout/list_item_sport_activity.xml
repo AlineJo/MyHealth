@@ -36,7 +36,7 @@
         app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
-        android:id="@+id/tv_title"
+        android:id="@+id/tv_titles"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -63,7 +63,7 @@
         android:textAlignment="textEnd"
         android:textColor="#FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tv_title"
-        app:layout_constraintStart_toStartOf="@+id/tv_title"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+        app:layout_constraintEnd_toEndOf="@+id/tv_titles"
+        app:layout_constraintStart_toStartOf="@+id/tv_titles"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titles" />
 </androidx.constraintlayout.widget.ConstraintLayout>

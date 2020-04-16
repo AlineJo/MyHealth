@@ -12,7 +12,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 
 import com.example.myhealth.R;
-import com.example.myhealth.fragments.Goals;
 import com.example.myhealth.fragments.GoalsControlFragment;
 
 import java.util.ArrayList;
@@ -61,7 +60,7 @@ public class GoalsControlAdapter extends BaseAdapter {
 
         }
 
-        TextView tvTitle = convertView.findViewById(R.id.tv_title);
+        TextView tvTitle = convertView.findViewById(R.id.tv_titles);
         ImageButton ibDelete = convertView.findViewById(R.id.ib_delete);
 
         tvTitle.setText(mItems.get(position));

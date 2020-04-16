@@ -15,5 +15,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="MyCheckbox" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorControlNormal">#fff</item>
+        <item name="android:colorControlActivated">#fff</item>
+        <item name="android:colorControlHighlight">#fff</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
 
 </resources>

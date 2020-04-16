@@ -53,7 +53,7 @@ public class SportItemsAdapter extends BaseAdapter {
         }
 
         SportActivityItem item = (SportActivityItem) getItem(i);
-        TextView tvTitle = view.findViewById(R.id.tv_title);
+        TextView tvTitle = view.findViewById(R.id.tv_titles);
         TextView tvDesc = view.findViewById(R.id.tv_desc);
         ImageView ivImg = view.findViewById(R.id.iv_img);
 

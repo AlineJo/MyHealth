@@ -53,7 +53,7 @@ public class UserGuidAdapter extends BaseAdapter {
         ImageView ivCloud = view.findViewById(R.id.iv_cloud);
         ivCloud.setImageResource(userGuid.getCloudShape());
 
-        tvTitle = view.findViewById(R.id.tv_title);
+        tvTitle = view.findViewById(R.id.tv_titles);
         tvTitle.setText(userGuid.getTitle());
         tvTitle.setTextColor(ContextCompat.getColor(mContext, userGuid.getTextColor()));
 

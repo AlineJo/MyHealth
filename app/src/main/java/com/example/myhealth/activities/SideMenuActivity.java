@@ -17,15 +17,16 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.myhealth.R;
 import com.example.myhealth.fragments.AppInfoFragment;
 import com.example.myhealth.fragments.ChallengeFragment;
+import com.example.myhealth.fragments.FoodGroupFragment;
 import com.example.myhealth.fragments.GoalsControlFragment;
 import com.example.myhealth.fragments.GoalsFragment;
-import com.example.myhealth.fragments.LifeStyleFragment;
 import com.example.myhealth.fragments.ProfileFragment;
 import com.example.myhealth.fragments.SportActivitiesFragment;
 import com.example.myhealth.fragments.UserGuidFragment;
+import com.example.myhealth.interfaces.MediatorInterface;
 import com.google.android.material.navigation.NavigationView;
 
-public class SideMenuActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class SideMenuActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, MediatorInterface {
 
     DrawerLayout drawerLayout;
     Toolbar toolbar;
@@ -49,11 +50,9 @@ public class SideMenuActivity extends AppCompatActivity implements NavigationVie
         navigationView.setNavigationItemSelectedListener(this);
 
 
-        changeFragmentTo(new LifeStyleFragment(), LifeStyleFragment.class.getSimpleName());
+        changeFragmentTo(new FoodGroupFragment(), FoodGroupFragment.class.getSimpleName());
 
     }
-
-
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -67,25 +66,23 @@ public class SideMenuActivity extends AppCompatActivity implements NavigationVie
                 Toast.makeText(SideMenuActivity.this, "قيم صحتك", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 break;
-
             case R.id.activity:
                 Toast.makeText(SideMenuActivity.this, "الانشطة الرياضية", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 changeFragmentTo(new SportActivitiesFragment(), SportActivitiesFragment.class.getSimpleName());
-                 break;
 
+                break;
             case R.id.food:
                 Toast.makeText(SideMenuActivity.this, "الوجبات", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 changeFragmentTo(new GoalsControlFragment(), GoalsControlFragment.class.getSimpleName());
                 break;
-
             case R.id.goal:
                 Toast.makeText(SideMenuActivity.this, "الاهداف", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 changeFragmentTo(new GoalsFragment(), GoalsFragment.class.getSimpleName());
-                break;
 
+                break;
             case R.id.challenge:
                 Toast.makeText(SideMenuActivity.this, "التحدي", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
@@ -111,13 +108,11 @@ public class SideMenuActivity extends AppCompatActivity implements NavigationVie
                 drawerLayout.closeDrawer(GravityCompat.START);
                 changeFragmentTo(new UserGuidFragment(), UserGuidFragment.class.getSimpleName());
                 break;
-
             case R.id.info:
                 Toast.makeText(SideMenuActivity.this, "معلومات عن Healthy Lifestyle", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 changeFragmentTo(new AppInfoFragment(), AppInfoFragment.class.getSimpleName());
                 break;
-
             default:
                 break;
         }
@@ -131,6 +126,7 @@ public class SideMenuActivity extends AppCompatActivity implements NavigationVie
     }
 
 
+    @Override
     public void changeFragmentTo(Fragment fragmentToLoad, String fragmentTag) {
         if (getSupportFragmentManager().findFragmentByTag(fragmentTag) == null) {
             getSupportFragmentManager()
