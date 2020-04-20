@@ -64,6 +64,8 @@ public class SideMenuActivity extends AppCompatActivity implements NavigationVie
                 break;
             case R.id.lifestyle:
                 Toast.makeText(SideMenuActivity.this, "قيم صحتك", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SideMenuActivity.this, LifestyleActivity.class);
+                startActivity(intent);
                 drawerLayout.closeDrawer(GravityCompat.START);
                 break;
             case R.id.activity:
@@ -75,7 +77,7 @@ public class SideMenuActivity extends AppCompatActivity implements NavigationVie
             case R.id.food:
                 Toast.makeText(SideMenuActivity.this, "الوجبات", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
-                changeFragmentTo(new GoalsControlFragment(), GoalsControlFragment.class.getSimpleName());
+                changeFragmentTo(new FoodGroupFragment(), FoodGroupFragment.class.getSimpleName());
                 break;
             case R.id.goal:
                 Toast.makeText(SideMenuActivity.this, "الاهداف", Toast.LENGTH_SHORT).show();
@@ -93,7 +95,7 @@ public class SideMenuActivity extends AppCompatActivity implements NavigationVie
 
             case R.id.resetpass:
                 Toast.makeText(SideMenuActivity.this, "اعادة ضبط الرقم السري", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(SideMenuActivity.this, Resetpassword.class);
+                intent = new Intent(SideMenuActivity.this, Resetpassword.class);
                 startActivity(intent);
                 break;
 

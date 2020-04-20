@@ -63,19 +63,52 @@ public class FoodGroupFragment extends Fragment {
         FoodGroup foodGroup;
 
         foodGroup = new FoodGroup();
-        foodGroup.setTitle("Milk");
-        foodGroup.setImage(R.drawable.opaning);
+        foodGroup.setTitle("مجموعة الحليب");
+        foodGroup.setImage(R.drawable.milkg);
+        foodGroup.setCardColor("#369BF0");
+        addMilkSubGroup(foodGroup);// creating foodSubGroup for Milk
+        mItems.add(foodGroup);
+
+
+        foodGroup = new FoodGroup();
+        foodGroup.setTitle("مجموعة الخضروات");
+        foodGroup.setImage(R.drawable.vv);
+        foodGroup.setCardColor("#4CAF50");
+        addVegSubGroup(foodGroup);// Creating foodSub group for veg
+        mItems.add(foodGroup);
+
+        foodGroup = new FoodGroup();
+        foodGroup.setTitle("مجموعة الفواكه");
+        foodGroup.setImage(R.drawable.fruit);
         foodGroup.setCardColor("#FF0000");
         addMilkSubGroup(foodGroup);// creating foodSubGroup for Milk
         mItems.add(foodGroup);
 
 
         foodGroup = new FoodGroup();
-        foodGroup.setTitle("Vegetable");
-        foodGroup.setImage(R.drawable.opaning);
-        foodGroup.setCardColor("#4CAF50");
-        addVegSubGroup(foodGroup);// Creating foodSub group for veg
+        foodGroup.setTitle("مجموعة النشويات");
+        foodGroup.setImage(R.drawable.ccarb);
+        foodGroup.setCardColor("#B9A465");
+        addMilkSubGroup(foodGroup);// creating foodSubGroup for Milk
         mItems.add(foodGroup);
+
+
+        foodGroup = new FoodGroup();
+        foodGroup.setTitle("مجموعة البروتين");
+        foodGroup.setImage(R.drawable.protin);
+        foodGroup.setCardColor("#F3C749");
+        addMilkSubGroup(foodGroup);// creating foodSubGroup for Milk
+        mItems.add(foodGroup);
+
+
+        foodGroup = new FoodGroup();
+        foodGroup.setTitle("مجموعة الدهون");
+        foodGroup.setImage(R.drawable.fats);
+        foodGroup.setCardColor("#4BE0E7");
+        addMilkSubGroup(foodGroup);// creating foodSubGroup for Milk
+        mItems.add(foodGroup);
+
+
 
 
         mAdapter.update(mItems);

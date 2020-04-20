@@ -58,9 +58,9 @@ public class SportActivitiesFragment extends Fragment {
     private void displayDemoData() {
         ArrayList<SportActivityItem> items = new ArrayList<>();
 
-        items.add(new SportActivityItem("أنشطة رياضية منزلية", "أنشطة رياضية تستطيع ممارستها في المنزل", R.drawable.ic_launcher_foreground));//currently no img so we pass R.drawable.ic_launcher_foreground
-        items.add(new SportActivityItem("أنشطة رياضية في العمل", "أنشطة رياضية تستطيع ممارستها في جهة العمل", R.drawable.ic_launcher_foreground));//currently no img so we pass R.drawable.ic_launcher_foreground
-        items.add(new SportActivityItem("أنشطة رياضية في النادي الرياضي", "أنشطة رياضية تستطيع ممارستها النادي الرياضي", R.drawable.ic_launcher_foreground));//currently no img so we pass R.drawable.ic_launcher_foreground
+        items.add(new SportActivityItem("أنشطة رياضية منزلية", "أنشطة رياضية تستطيع ممارستها في المنزل", R.drawable.hhh));//currently no img so we pass R.drawable.ic_launcher_foreground
+        items.add(new SportActivityItem("أنشطة رياضية في العمل", "أنشطة رياضية تستطيع ممارستها في جهة العمل", R.drawable.of));//currently no img so we pass R.drawable.ic_launcher_foreground
+        items.add(new SportActivityItem("أنشطة رياضية في النادي الرياضي", "أنشطة رياضية تستطيع ممارستها النادي الرياضي", R.drawable.gym));//currently no img so we pass R.drawable.ic_launcher_foreground
 
         mAdapter.update(items);
 

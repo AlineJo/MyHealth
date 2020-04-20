@@ -1,6 +1,7 @@
 package com.example.myhealth.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
 
 import android.content.Intent;
 
@@ -11,6 +12,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
+import com.example.myhealth.fragments.AdminHomeFragment;
+import com.example.myhealth.fragments.SportActivitiesFragment;
 import com.example.myhealth.model.LoginResponse;
 import com.example.myhealth.R;
 import com.example.myhealth.model.RetrofitClient;
@@ -56,8 +59,10 @@ public class login extends AppCompatActivity implements View.OnClickListener {
 
     }
 
+    //بعده م اشتغل on process
     private void openAdmin() {
-        Intent intent = new Intent(login.this, Admin.class);
+        Toast.makeText(login.this, "مرحباً بالمشرف", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(login.this, AdminHomeFragment.class);
         startActivity(intent);
     }
 
